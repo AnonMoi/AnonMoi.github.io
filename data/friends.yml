@@ -1,0 +1,9 @@
+- name: 博客名称1
+  url: https://example.com
+  avatar: https://example.com/avatar.jpg
+  desc: 一句话博客简介
+
+- name: 博客名称2
+  url: https://example2.com
+  avatar: https://example2.com/avatar.jpg
+  desc: 另一个博客的简介
