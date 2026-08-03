@@ -1,13 +1,7 @@
 # 友链数据
-# 想申请友链请在评论区留言，或直接 PR 本文件
+# 友链申请请通过 GitHub Issues 联系我。
 # 格式：
-#   name:  博客名称
-#   url:   博客地址
-#   desc:  一句话简介
-#   image: 头像 URL
-
-# 示例（替换为真实友链后取消注释）：
-# - name: 示例博客
+# - name: 博客名称
 #   url: https://example.com
-#   desc: 这是一个示例博客
+#   desc: 一句话简介
 #   image: https://example.com/avatar.jpg
