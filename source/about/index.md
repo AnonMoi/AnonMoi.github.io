@@ -2,6 +2,7 @@
 title: 关于
 date: 2026-06-29
 comments: false
+copyright: false
 ---
 
 ## 欢迎来到我的博客

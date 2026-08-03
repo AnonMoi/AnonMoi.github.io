@@ -1,6 +1,7 @@
 ---
 title: 测试第一篇文章，test test～～
 date: 2026-06-29 15:11:23
+permalink: /post/my-first-post/
 tags:
   - Hugo
   - Hexo

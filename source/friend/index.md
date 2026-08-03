@@ -1,6 +1,7 @@
 ---
 title: 友情链接
 comments: false
+copyright: false
 ---
 
 ## 本站信息
@@ -12,7 +13,7 @@ comments: false
 
 ## 申请方法
 
-- 添加本站后，在本页留言，格式如下
+- 添加本站后，欢迎通过 [GitHub Issues](https://github.com/AnonMoi/AnonMoi.github.io/issues) 联系我，格式如下
 
 ```yml
 - name: #您的名字
