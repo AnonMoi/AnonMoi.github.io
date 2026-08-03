@@ -118,7 +118,7 @@ footer:
 # Sidebar
 # sidebar: right # deprecated, use sidebar.position instead
 sidebar:
-  position: right
+  position: left
   menu: true  # whether to show the sidebar menu button, ignored on mobile devices
   article:
     show_common: true # whether to show common sidebar, ignored on mobile devices
@@ -155,11 +155,9 @@ social:
   # tiktok:
 
 widgets:
-  # - category
-  # - tag
-  # - tagcloud
-  # - archive
-  # - recent_posts
+  - category
+  - tagcloud
+  - recent_posts
 
 # Widget behavior
 archive_type: "monthly"
@@ -196,7 +194,7 @@ triangle_badge:
   link: https://github.com/D-Sketon/hexo-theme-reimu
 
 layout:
-  max_width: 1350px # the max width of the main content area
+  max_width: 1200px # the max width of the main content area
 
 anchor_icon: # default use '#' icon, you can use a hexadecimal representation of fontawesome or icon_font, like 'f0c1', or you can use false to hide anchor icon
 
@@ -579,9 +577,11 @@ home_categories:
   enable: true
   content:
     - categories: 建站日志
-      cover: # empty means random cover
+      cover: /images/banner.webp
     - categories: 学习笔记
-      cover:
+      cover: /images/banner.webp
+    - categories: 二次元日常
+      cover: /images/banner.webp
 
 # whether to display the notification when the article is outdated
 outdate:
