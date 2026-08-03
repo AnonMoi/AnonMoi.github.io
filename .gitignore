@@ -1,24 +1,8 @@
-# Hugo build 产物
-public/
-resources/_gen/
-.hugo_build.lock
-
-# 临时文件
-*.txt
-新建文本文档.txt
-
-# OS 文件
 .DS_Store
 Thumbs.db
-desktop.ini
-
-# 编辑器
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# 注意：以下目录已被 commit 进仓库，建议后续用 git rm --cached 清理
-# about/ archives/ categories/ friend/ css/*.min.css js/ index.html index.xml 404.html
-# 这些是 Hugo build 输出，不应该放在源码仓库里
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
