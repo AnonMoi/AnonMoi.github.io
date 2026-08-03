@@ -28,7 +28,7 @@ timeFormat: "2006-01-02 15:04:05"
 
 author: AnonMoi
 email: 2872233184@qq.com
-description: "扶我起来，我还能挣......"
+description: "AnonMoi 的个人博客 — 技术笔记、二次元日常与生活记录"
 # subtitle: "少女祈祷中..."
 subtitle:
   typing:
@@ -93,7 +93,7 @@ excerpt_link: Read More
 # Footer copyright
 # Inject code snippet right in the footer copyright
 # Make sure your code snippet is safeHTML
-copyright:
+copyright: '<a href="https://github.com/AnonMoi/AnonMoi.github.io" target="_blank" rel="noopener noreferrer">本站源码</a>'
 # Need help choosing? Please see...
 # https://creativecommons.org/choose/
 # https://choosealicense.com/
@@ -120,8 +120,8 @@ sidebar:
     show_common: true # whether to show common sidebar, ignored on mobile devices
 
 social:
-  # email: mailto:xxx@gmail.com
-  # github: https://github.com/yourname
+  email: mailto:2872233184@qq.com
+  github: https://github.com/AnonMoi
   # google: https://plus.google.com/yourname
   # twitter: https://twitter.com/yourname
   # bluesky: https://bsky.app/profile/yourname
@@ -301,7 +301,7 @@ clipboard:
     ja: コピー失敗 (ﾟ⊿ﾟ)ﾂ
     pt-BR: Falha ao copiar (ﾟ⊿ﾟ)ﾂ
   copyright:
-    enable: false
+    enable: true
     count: 50 # The number of characters when the copyright is displayed
     license_type: by-nc-sa # https://creativecommons.org/licenses
 
@@ -559,7 +559,7 @@ firework:
 
 # show the copyright below each article
 article_copyright:
-  enable: false
+  enable: true
   content:
     author: true
     link: true
@@ -580,7 +580,7 @@ top:
 
 # whether to display the notification when the article is outdated
 outdate:
-  enable: false
+  enable: true
   daysAgo: 180 # The number of days after which the article is considered outdated
   message:
     en: This article was last updated on {time}. Please note that the content may no longer be applicable.
@@ -645,7 +645,12 @@ home_categories:
 # Inject code snippet
 # Make sure your code snippet is safeHTML
 injector:
-  head_begin: # Inject code snippet right after <head>
+  head_begin: |-
+    <!-- 搜索引擎站长平台验证码 — 注册后替换注释 -->
+    <!-- Google Search Console: https://search.google.com/search-console -->
+    <!-- <meta name="google-site-verification" content="你的验证码" /> -->
+    <!-- Bing Webmaster Tools: https://www.bing.com/webmasters -->
+    <!-- <meta name="msvalidate.01" content="你的验证码" /> -->
   head_end: # Inject code snippet right before </head>
   body_begin: # Inject code snippet right after <body>
   body_end: # Inject code snippet right before </body>

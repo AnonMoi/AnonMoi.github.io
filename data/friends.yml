@@ -1,9 +1,15 @@
-- name: 博客名称1
-  url: https://example.com
-  avatar: https://example.com/avatar.jpg
-  desc: 一句话博客简介
+# 友链数据
+# 格式说明：
+#   name:    博客名称
+#   url:     博客地址
+#   avatar:  头像 URL
+#   desc:    一句话简介
+#
+# 想申请友链请在评论区留言，或直接 PR 本文件。
+# 暂时没有友链，等有真实友链再添加到这里。
 
-- name: 博客名称2
-  url: https://example2.com
-  avatar: https://example2.com/avatar.jpg
-  desc: 另一个博客的简介
+# 示例（替换为真实友链后取消注释）：
+# - name: 示例博客
+#   url: https://example.com
+#   avatar: https://example.com/avatar.jpg
+#   desc: 这是一个示例博客
