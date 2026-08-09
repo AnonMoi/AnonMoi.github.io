@@ -71,22 +71,16 @@ hexo.extend.helper.register("get_langs", function () {
 
 hexo.extend.helper.register("switch_lang", function (lang) {
   const languages = this.get_langs();
-  let path = this.page.path;
-  const root = this.config.root || "";
-  if (path.startsWith(this.page.lang)) {
-    path = path.substring(this.page.lang.length);
-  }
-  if (!path.startsWith("/")) {
-    path = "/" + path;
+  const currentLang = this.page.lang;
+  let path = String(this.page.path || "").replace(/^\/+/, "");
+
+  if (currentLang && path.startsWith(`${currentLang}/`)) {
+    path = path.substring(currentLang.length + 1).replace(/^\/+/, "");
   }
 
-  let result = "";
-  if (languages.indexOf(lang) === 0) {
-    result = root + path.substring(1);
-  } else {
-    result = root + lang + path;
-  }
-  return prettyUrls(result, {
+  const targetPath =
+    languages.indexOf(lang) === 0 ? path : `${lang}/${path}`;
+  return prettyUrls(this.url_for(targetPath), {
     trailing_index: false,
     trailing_html: false,
   });

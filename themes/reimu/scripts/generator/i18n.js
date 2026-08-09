@@ -2,6 +2,9 @@
 
 let localPostsCache = null;
 
+const joinLangPath = (lang, path) =>
+  `${lang}/${String(path || "").replace(/^\/+/, "")}`;
+
 hexo.on("generateBefore", () => {
   localPostsCache = null;
 });
@@ -53,7 +56,7 @@ hexo.extend.generator.register("post-with-lang", function (locals) {
   return posts.map((post) => {
     let { path, layout, lang } = post;
     if (lang) {
-      path = `${lang}/${path}`;
+      path = joinLangPath(lang, path);
     }
     if (!layout || layout === "false") {
       return {
@@ -131,7 +134,7 @@ hexo.extend.generator.register("page-i18n", function (locals) {
     const layout = page.layout;
     for (let i = 1; i < languages.length; i++) {
       const language = languages[i];
-      const path = `${language}/${page.path}`;
+      const path = joinLangPath(language, page.path);
       if (langPath.includes(path)) {
         continue;
       }
@@ -235,7 +238,7 @@ hexo.extend.generator.register("post-i18n", function (locals) {
       if (langs.includes(language)) {
         continue;
       }
-      const path = `${language}/${page.path}`;
+      const path = joinLangPath(language, page.path);
       if (!layout || layout === "false" || layout === "off") {
         result.push({
           path,
@@ -302,11 +305,11 @@ hexo.extend.generator.register("archive-i18n", function (locals) {
             ...item,
             data: { ...item.data },
           };
-          copy.path = `${language}/${item.path}`;
-          copy.data.base = `${language}/${item.data.base}`;
-          copy.data.prev_link = `${language}/${item.data.prev_link}`;
-          copy.data.current_url = `${language}/${item.data.current_url}`;
-          copy.data.next_link = `${language}/${item.data.next_link}`;
+          copy.path = joinLangPath(language, item.path);
+          copy.data.base = joinLangPath(language, item.data.base);
+          copy.data.prev_link = joinLangPath(language, item.data.prev_link);
+          copy.data.current_url = joinLangPath(language, item.data.current_url);
+          copy.data.next_link = joinLangPath(language, item.data.next_link);
           result.push(copy);
         }
       });
