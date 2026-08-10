@@ -9,7 +9,7 @@ tags:
 categories:
   - 建站日志
 description: 博客第一篇测试文章，验证 Hexo + Reimu 主题的发布流程是否正常。
-cover:
+cover: /images/cover-my-first-post.webp
 sticky: false
 comments: true
 mermaid: false

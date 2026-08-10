@@ -201,9 +201,9 @@ anchor_icon: # default use '#' icon, you can use a hexadecimal representation of
 reimu_cursor:
   enable: true
   cursor:
-    default: ../images/cursor/reimu-cursor-default.png # this path is relative to the css/style.css, so it needs to go up one level to reach the images folder
-    pointer: ../images/cursor/reimu-cursor-pointer.png
-    text: ../images/cursor/reimu-cursor-text.png
+    default: ../images/cursor/kana-cursor-default.png # this path is relative to the css/style.css, so it needs to go up one level to reach the images folder
+    pointer: ../images/cursor/kana-cursor-pointer.png
+    text: ../images/cursor/kana-cursor-text.png
 
 # set to false to enable fontawesome
 icon_font: 4552607_ex15nbittbh
@@ -577,9 +577,9 @@ home_categories:
   enable: true
   content:
     - categories: 建站日志
-      cover: /images/banner.webp
+      cover: /images/category-building.webp
     - categories: 学习笔记
-      cover: /images/banner.webp
+      cover: /images/category-study.webp
 
 # whether to display the notification when the article is outdated
 outdate:
@@ -753,16 +753,16 @@ material_theme:
 
 internal_theme:
   light:
-    --red-0: "#ff0000"
-    --red-1: "#ff5252"
-    --red-2: "#ff7c7c"
-    --red-3: "#ffafaf"
-    --red-4: "#ffd0d0"
-    --red-5: "#ffecec"
-    --red-5-5: "#fff3f3"
-    --red-6: "#fff7f7"
-    --color-red-6-shadow: "rgba(255, 78, 78, 0.6)"
-    --color-red-3-shadow: "rgba(255, 78, 78, 0.3)"
+    --red-0: "#6e3442"
+    --red-1: "#864554"
+    --red-2: "#9b5866"
+    --red-3: "#bf8b96"
+    --red-4: "#d9b7be"
+    --red-5: "#eee0e3"
+    --red-5-5: "#f5eaed"
+    --red-6: "#faf4f6"
+    --color-red-6-shadow: "rgba(134, 69, 84, 0.38)"
+    --color-red-3-shadow: "rgba(134, 69, 84, 0.22)"
 
     --highlight-nav: "#f5f5f5"
     --highlight-scrollbar: "#d6d6d6"
@@ -782,10 +782,10 @@ internal_theme:
     --highlight-addition: "#22863a"
     --highlight-addition-bg: "#f0fff4"
   dark:
-    --red-4: "rgba(255, 208, 208, 0.5)"
-    --red-5: "rgba(255,228,228,0.15)"
-    --red-5-5: "rgba(255,236,236,0.05)"
-    --red-6: "rgba(255, 243, 243, 0.2)"
+    --red-4: "rgba(191, 139, 150, 0.5)"
+    --red-5: "rgba(155, 88, 102, 0.18)"
+    --red-5-5: "rgba(155, 88, 102, 0.08)"
+    --red-6: "rgba(155, 88, 102, 0.22)"
 
     --highlight-nav: "#222830"
     --highlight-scrollbar: "#454d59"
